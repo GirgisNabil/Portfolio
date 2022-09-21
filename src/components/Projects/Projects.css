@@ -1,0 +1,62 @@
+.Projects {
+  background-color: var(--main-color);
+  display: flex;
+  padding-bottom: 100px;
+}
+
+.Projects .container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(330px, 1fr));
+  justify-content: center;
+  align-items: center;
+  padding-top: 50px;
+  padding-bottom: 165px;
+  gap: 40px;
+}
+
+.Projects .container .box-container1 {
+  padding-top: 30px;
+}
+
+.Projects .container .box-container2 {
+  padding-top: 147px;
+}
+.Projects .container .box-container3 {
+  padding-top: 0px;
+}
+.Projects .container .box-container1 h1 {
+  font-size: 70px;
+  position: relative;
+}
+
+.Projects .container .box-container1 h1::after {
+  content: "Projects";
+  position: absolute;
+  font-size: 20px;
+  color: var(--sec-color);
+  left: -38px;
+  top: -21px;
+  transform: rotate(-25deg);
+}
+
+@media (max-width: 768px) {
+  .Projects .container .box-container2 {
+    padding-top: 30px;
+  }
+  .Projects .container .box-container3 {
+    padding-top: 30px;
+  }
+
+  .Projects .container {
+    gap: 00px;
+    padding-top: 0px;
+  }
+  .Projects .container .box-container1 h1 {
+    font-size: 55px;
+  }
+
+  .Projects .container .box-container1 h1::after {
+    left: -11px;
+    top: -28px;
+  }
+}

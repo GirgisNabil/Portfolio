@@ -1,0 +1,18 @@
+.skill-container div {
+  background-color: var(--black);
+  border-radius: 50%;
+  min-width: 75px;
+  min-height: 75px;
+  max-width: 75px;
+  max-height: 75px;
+  color: var(--white);
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 30px;
+}
+
+.skill-container p {
+  font-weight: bold;
+}

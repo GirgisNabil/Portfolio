@@ -1,0 +1,181 @@
+.contact {
+  background-color: var(--main-color);
+  padding-bottom: 142px;
+  padding-top: 70px;
+}
+.contact .container {
+  padding-top: 100px;
+  display: flex;
+  gap: 50px;
+}
+.contact .container .left {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.contact .container .left h1 {
+  font-size: 73px;
+  margin-top: 0px;
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.contact .container .left h1::after {
+  content: "Contact";
+  position: absolute;
+  font-size: 20px;
+  color: var(--sec-color);
+  left: -38px;
+  top: -21px;
+  transform: rotate(-25deg);
+}
+
+.contact .container .left .single-contact {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  border-top: 2px solid var(--black);
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.contact .container .left i {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: var(--white);
+  padding: 25px;
+  border-radius: 50%;
+  font-size: 30px;
+}
+
+.contact .container .right {
+  flex: 1;
+}
+
+.contact .container .right {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+}
+
+.contact .container .right .circule {
+  position: relative;
+  max-width: 550px;
+  max-height: 550px;
+  min-width: 550px;
+  min-height: 550px;
+  border: 2px solid var(--black);
+  border-radius: 50%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 10% 0px 10%;
+}
+
+.contact .container .right .circule::after {
+  content: "";
+  position: absolute;
+  width: 80%;
+  bottom: 190px;
+  left: 41px;
+  transform: rotate(12deg);
+  border-bottom: 2px solid var(--black);
+}
+
+.contact .container .right .circule .sayhi {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  align-items: baseline;
+}
+
+.contact .container .right .circule .sayhi span {
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.contact .container .right .circule .sayhi i {
+  font-size: 60px;
+  transform: scaleX(-1);
+}
+
+.contact .container .right .circule .link {
+  padding: 40px;
+  border-radius: 50%;
+  min-width: 150px;
+  min-height: 150px;
+
+  background-color: var(--sec-color);
+  color: var(--white);
+
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 60px;
+}
+
+@media (max-width: 992px) {
+  .contact {
+    background-color: var(--main-color);
+    padding-bottom: 180px;
+    padding-top: 0px;
+  }
+  .contact .container {
+    flex-direction: column;
+    padding-top: 70px;
+  }
+  .contact .container .right .circule {
+    max-width: 450px;
+    max-height: 450px;
+    min-width: 450px;
+    min-height: 450px;
+  }
+
+  .contact .container .right .circule::after {
+    bottom: 126px;
+    left: 33px;
+  }
+}
+
+@media (max-width: 768px) {
+  .contact .container .left h1 {
+    font-size: 50px;
+  }
+
+  .contact .container .left h1::after {
+    left: -12px;
+    top: -30px;
+  }
+  .contact .container .left .single-contact h2 {
+    font-size: 15px;
+  }
+
+  .contact .container .right .circule {
+    max-width: 320px;
+    max-height: 320px;
+    min-width: 320px;
+    min-height: 320px;
+
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 10% 0px 10%;
+  }
+
+  .contact .container .right .circule::after {
+    bottom: 86px;
+    left: 16px;
+  }
+
+  .contact .container .right .circule .link {
+    padding: 0px;
+    min-width: 80px;
+    min-height: 80px;
+
+    font-size: 30px;
+  }
+}

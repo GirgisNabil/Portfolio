@@ -1,0 +1,21 @@
+.footer {
+  background: var(--main-color);
+}
+.footer .container {
+  display: flex;
+  justify-content: space-between;
+  border-top: 2px solid var(--black);
+  padding-bottom: 65px;
+  font-weight: bold;
+  padding-top: 22px;
+}
+
+@media (max-width: 768px) {
+  .footer .container {
+    flex-direction: column-reverse;
+    align-items: center;
+    gap: 30px;
+    padding-bottom: 35px;
+    padding-top: 30px;
+  }
+}
