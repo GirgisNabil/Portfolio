@@ -1,6 +1,6 @@
 import React from "react";
 import "./Contact.css";
-import { faWaveSquare } from "@fortawesome/free-solid-svg-icons";
+
 import { BsFillChatSquareDotsFill } from "react-icons/bs";
 import { CgHello } from "react-icons/cg";
 import { FaMobileAlt } from "react-icons/fa";

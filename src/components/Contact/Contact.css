@@ -74,6 +74,21 @@
   justify-content: space-between;
   align-items: center;
   padding: 0px 10% 0px 10%;
+  animation-name: rolling;
+  animation-duration: 3s;
+  animation-direction: alternate;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  box-shadow: 5px 5px 10px var(--black);
+}
+
+@keyframes rolling {
+  0% {
+    transform: translateX(0) rotate(0);
+  }
+  100% {
+    transform: translateX(200px) rotate(360deg);
+  }
 }
 
 .contact .container .right .circule::after {
