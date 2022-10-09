@@ -15,10 +15,10 @@ export default function Projects() {
         <div className="box-container1" data-aos="fade-right">
           <h1>Latest Projcets</h1>
           <ProjectCard
-            title="Kasper Template Design"
-            subtitle="Web/Single Page Website"
-            img="./imgs/Kasper.png"
-            refff="https://girgisnabil.github.io/Kasper-Template/"
+            title="Netflix Clone"
+            subtitle="Dynamic website with API's"
+            img="./imgs/netflix.png"
+            refff="https://netflix-girgis.vercel.app/"
           />
         </div>
         <div className="box-container2" data-aos="fade-up">

@@ -3,13 +3,12 @@ import "./Skills.css";
 import SignleSkill from "../SingleSkill/SignleSkill";
 import { IoLogoJavascript, IoLogoCss3, IoLogoHtml5 } from "react-icons/io";
 import { BsBootstrapFill } from "react-icons/bs";
+
 import {
-  SiAdobephotoshop,
-  SiWebgl,
-  SiThreedotjs,
   SiNodedotjs,
-  SiGithub,
-  SiBlender,
+  SiTailwindcss,
+  SiNextdotjs,
+  SiTypescript,
 } from "react-icons/si";
 
 import { GrReactjs } from "react-icons/gr";
@@ -45,13 +44,9 @@ export default function Skills() {
               <SignleSkill icon={GrReactjs} name="React.js" />
             </div>
             <div className="row">
-              <SignleSkill icon={SiThreedotjs} name="THREE.js" />
-              <SignleSkill icon={SiBlender} name="Blender" />
-              <SignleSkill
-                icon={SiAdobephotoshop}
-                name="Photoshop"
-                id="item9"
-              />
+              <SignleSkill icon={SiNextdotjs} name="Next.js" />
+              <SignleSkill icon={SiTailwindcss} name="TailWind" />
+              <SignleSkill icon={SiTypescript} name="TypeScript" id="item9" />
             </div>
           </div>
         </div>
