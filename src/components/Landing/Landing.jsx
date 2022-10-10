@@ -41,7 +41,7 @@ export default function Landing() {
                 typeSpeed={100}
                 deleteSpeed={70}
                 delaySpeed={1000}
-                words={["Girgis Nabil", "Web Developer", "Creative"]}
+                words={["Girgis Nabil", "Developer .", "Creative ."]}
               />
             </span>
           </h1>
