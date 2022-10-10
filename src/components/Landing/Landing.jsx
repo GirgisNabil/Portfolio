@@ -1,10 +1,8 @@
-import React, { useEffect, useRef } from "react";
+import React, { useEffect } from "react";
 import "./Landing.css";
 import { FiDownload } from "react-icons/fi";
-import { BsWhatsapp } from "react-icons/bs";
 import { RiGithubLine, RiCodepenFill } from "react-icons/ri";
 import { FaLinkedinIn } from "react-icons/fa";
-import { Link, Redirect } from "react-router-dom";
 
 export default function Landing() {
   useEffect(() => {
@@ -27,7 +25,7 @@ export default function Landing() {
       }
       setTimeout(type, 400);
     })();
-  });
+  }, []);
 
   return (
     <div className="container ">
@@ -35,7 +33,7 @@ export default function Landing() {
         <div className="left-section">
           <h1 className="h1">Hay! I Am</h1>
 
-          <h1 className="typing"></h1>
+          <h1 className="typing"> </h1>
           <div className="paragraph">
             <div></div>
             <p>
