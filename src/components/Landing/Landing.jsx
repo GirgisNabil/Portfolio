@@ -1,38 +1,51 @@
-import React, { useEffect } from "react";
+import React from "react";
 import "./Landing.css";
 import { FiDownload } from "react-icons/fi";
 import { RiGithubLine, RiCodepenFill } from "react-icons/ri";
 import { FaLinkedinIn } from "react-icons/fa";
-
+import { Typewriter } from "react-simple-typewriter";
 export default function Landing() {
-  useEffect(() => {
-    // Update the document title using the browser API
-    const texts = ["Girgis Nabil", "Front End", "Creative !"];
-    let count = 0;
-    let index = 0;
-    let currentText = "";
-    let letter = "";
-    (function type() {
-      if (count === texts.length) {
-        count = 0;
-      }
-      currentText = texts[count];
-      letter = currentText.slice(0, ++index);
-      document.querySelector(".typing").textContent = letter;
-      if (letter.length === currentText.length) {
-        count++;
-        index = 0;
-      }
-      setTimeout(type, 400);
-    })();
-  }, []);
+  // useEffect(() => {
+  //   // Update the document title using the browser API
+  //   const texts = ["Girgis Nabil", "Front End", "Creative !"];
+  //   let count = 0;
+  //   let index = 0;
+  //   let currentText = "";
+  //   let letter = "";
+  //   (function type() {
+  //     if (count === texts.length) {
+  //       count = 0;
+  //     }
+  //     currentText = texts[count];
+  //     letter = currentText.slice(0, ++index);
+  //     document.querySelector(".typing").textContent = letter;
+  //     if (letter.length === currentText.length) {
+  //       count++;
+  //       index = 0;
+  //     }
+  //     setTimeout(type, 400);
+  //   })();
+  // }, []);
 
   return (
     <div className="container ">
       <div className="Landing zigzag">
         <div className="left-section">
-          <h1 className="h1">Hay! I Am</h1>
-
+          <h1 className="h1">
+            Hay! I Am <br />
+            <span>
+              <Typewriter
+                loop
+                cursor
+                cursorStyle="_"
+                typeSpeed={100}
+                deleteSpeed={70}
+                delaySpeed={1000}
+                words={["Developer", "Creative", "improviser"]}
+              />
+            </span>
+          </h1>
+          <div className="App"></div>
           <h1 className="typing"> </h1>
           <div className="paragraph">
             <div></div>
