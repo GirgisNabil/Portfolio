@@ -1,16 +1,14 @@
+:root {
+  --swiper-theme-color: #242d49 !important;
+}
 .Projects {
   background-color: var(--main-color);
-  display: flex;
-  padding-bottom: 100px;
+  padding-bottom: 50px;
 }
 
 .Projects .container {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(330px, 1fr));
-  justify-content: center;
-  align-items: center;
   padding-top: 50px;
-  padding-bottom: 165px;
+  padding-bottom: 160px;
   gap: 40px;
 }
 
@@ -24,9 +22,11 @@
 .Projects .container .box-container3 {
   padding-top: 0px;
 }
-.Projects .container .box-container1 h1 {
+.Projects .container h1 {
   font-size: 70px;
   position: relative;
+  margin: 0px;
+  padding: 50px 0px;
 }
 
 .Projects .container .box-container1 h1::after {
@@ -37,6 +37,34 @@
   left: -38px;
   top: -21px;
   transform: rotate(-25deg);
+}
+
+.projects-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.arrow {
+  border: solid black;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 10px;
+}
+
+.arrowright {
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+  margin-left: 20px;
+}
+
+.arrowleft {
+  transform: rotate(135deg);
+  -webkit-transform: rotate(135deg);
+  margin-right: 20px;
+}
+.swiper {
+  overflow: visible !important;
+  overflow-x: hidden !important;
 }
 
 @media (max-width: 768px) {
@@ -58,5 +86,18 @@
   .Projects .container .box-container1 h1::after {
     left: -11px;
     top: -28px;
+  }
+
+  .arrow {
+    padding: 4px;
+  }
+
+  .Projects .container h1 {
+    font-size: 60px;
+  }
+}
+@media (min-width: 1450px) {
+  .Projects .container {
+    width: 1500px !important;
   }
 }

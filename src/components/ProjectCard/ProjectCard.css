@@ -1,9 +1,16 @@
 .projectCard {
-  border-top: 2.5px solid var(--black);
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  margin: 0;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  overflow: hidden !important;
+}
+
+.projectCard::-webkit-scrollbar {
+  display: none;
 }
 .projectCard .content {
   text-align: center;
@@ -12,13 +19,14 @@
 .projectCard .content .title {
   display: flex;
   align-items: center;
+  justify-content: space-between;
   gap: 30px;
 }
 
 .projectCard .content .title h2 {
   text-align: start;
   font-size: 30px;
-  margin-bottom: 0px;
+  margin: 0px;
 }
 
 .projectCard .content p {
@@ -43,7 +51,10 @@
   animation: arrowmoves 0.8s infinite linear;
   animation-direction: alternate;
 }
-
+.swiper-button-next,
+.swiper-button-prev {
+  color: white !important;
+}
 @keyframes arrowmoves {
   0% {
     transform: translate(0);
