@@ -4,7 +4,6 @@
   padding-top: 70px;
 }
 .contact .container {
-  padding-top: 100px;
   display: flex;
   gap: 50px;
 }
@@ -15,7 +14,7 @@
 }
 
 .contact .container .left h1 {
-  font-size: 73px;
+  font-size: 55px;
   margin-top: 0px;
   position: relative;
   display: flex;

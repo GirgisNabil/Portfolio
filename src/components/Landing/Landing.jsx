@@ -68,32 +68,34 @@ export default function Landing() {
 
           <div className="end">
             <p>check out my</p>
-            <div>
-              <a
-                href="https://github.com/GirgisNabil"
-                rel="noreferrer"
-                target="_blank"
-              >
-                <RiGithubLine className="icon" />
-              </a>
-            </div>
-            <div>
-              <a
-                href="https://www.linkedin.com/in/girgis-nabil-aa53111b1/"
-                rel="noreferrer"
-                target="_blank"
-              >
-                <FaLinkedinIn className="icon" />
-              </a>
-            </div>
-            <div>
-              <a
-                href="https://codepen.io/kuarii"
-                rel="noreferrer"
-                target="_blank"
-              >
-                <RiCodepenFill className="icon" />
-              </a>
+            <div className="socials">
+              <div>
+                <a
+                  href="https://github.com/GirgisNabil"
+                  rel="noreferrer"
+                  target="_blank"
+                >
+                  <RiGithubLine className="icon" />
+                </a>
+              </div>
+              <div>
+                <a
+                  href="https://www.linkedin.com/in/girgis-nabil-aa53111b1/"
+                  rel="noreferrer"
+                  target="_blank"
+                >
+                  <FaLinkedinIn className="icon" />
+                </a>
+              </div>
+              <div>
+                <a
+                  href="https://codepen.io/kuarii"
+                  rel="noreferrer"
+                  target="_blank"
+                >
+                  <RiCodepenFill className="icon" />
+                </a>
+              </div>
             </div>
           </div>
         </div>

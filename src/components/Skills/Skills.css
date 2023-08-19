@@ -150,7 +150,8 @@
   }
 
   .skills .container .left .title h1 {
-    font-size: 55px;
+    font-size: 40px;
+    margin-top: 80px;
   }
   .right img {
   }
@@ -158,6 +159,15 @@
   .skills .container .left .title h1::after {
     left: -11px;
     top: -28px;
+  }
+  .skills .container .left h2 {
+    font-size: 20px;
+  }
+  .skills .container .left h3 {
+    font-size: 30px;
+  }
+  .right {
+    margin-bottom: 80px;
   }
 }
 

@@ -18,6 +18,67 @@ export default function Projects() {
 
   const Projects = [
     {
+      title: "Smouha Club website",
+      subtitle: "sports club smouha /Multi Page Application",
+      img: "./imgs/smouha.jpg",
+      refff: "https://www.smouhaclub.com/en/",
+    },
+    {
+      title: "Noonen",
+      subtitle: "E-commerce website/Multi Page  Application",
+      img: "./imgs/noonen.jpg",
+      refff: "https://nooneen.com/en/shop",
+    },
+    {
+      title: "Riders",
+      subtitle: "e-scooters app/Landing Page Application",
+      img: "./imgs/riders.jpg",
+      refff: "https://riders.sa/en/",
+    },
+    {
+      title: "Rahal",
+      subtitle: "Tourism mobile app/Landing Page Application",
+      img: "./imgs/rahal.jpg",
+      refff: "https://rahal.app/en",
+    },
+    {
+      title: "Esli",
+      subtitle: "water treatment Company/Multi Page Application",
+      img: "./imgs/esli.jpg",
+      refff: "https://esliegypt.com/en/",
+    },
+    {
+      title: "Amek",
+      subtitle: "Geo textiles Company/Landing Page Application",
+      img: "./imgs/amek.jpg",
+      refff: "https://amekgeo.com/",
+    },
+    {
+      title: "ISRAA",
+      subtitle: "Engineered Supplies Company/Landing Page Application",
+      img: "./imgs/israa.jpg",
+      refff: "https://israagroup.com/en ",
+    },
+
+    {
+      title: "ISRAA Mining",
+      subtitle: "Mining Company/Landing Page Application",
+      img: "./imgs/mining.jpg",
+      refff: "https://mining.israagroup.com/en/",
+    },
+    {
+      title: "AFIGR",
+      subtitle: "International group/Landing Page Application",
+      img: "./imgs/afig.jpg",
+      refff: "https://afigr.com/en/",
+    },
+    {
+      title: "Nour Stores locations",
+      subtitle: "e-commerce store/Map Application",
+      img: "./imgs/nour.jpg",
+      refff: "https://nour-store-b77fe.web.app/",
+    },
+    {
       title: "HomeDreams",
       subtitle: "Interior Design Company/Multi Page  Next.js Application",
       img: "./imgs/HomeDreams.PNG",
@@ -78,7 +139,6 @@ export default function Projects() {
           <h1>Latest Projcets</h1>
 
           <div className="projects-container">
-            <div className="arrow arrowleft"></div>
             <Swiper
               breakpoints={{
                 // when window width is >= 640px
@@ -115,7 +175,6 @@ export default function Projects() {
                 );
               })}
             </Swiper>
-            <div className="arrow arrowright "></div>
           </div>
         </div>
       </div>

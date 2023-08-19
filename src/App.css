@@ -64,6 +64,9 @@ a {
   background-repeat: repeat-x;
   animation: 2s infinite normal e;
   animation-timing-function: linear;
+  padding-top: 100px !important;
+  margin-bottom: 55px !important;
+  min-height: calc(100dvh - 55px) !important;
 }
 
 @media (max-width: 768px) {
@@ -100,6 +103,8 @@ a {
     background-size: 29px 14px, 29px 14px, 29px 29px, 29px 29px;
     animation: 2s infinite normal e;
     animation-timing-function: linear;
+    padding-top: 10px !important;
+    margin-bottom: 0px !important;
   }
 }
 @keyframes e {

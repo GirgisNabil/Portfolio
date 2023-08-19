@@ -82,7 +82,7 @@ export default function Skills() {
             </div>
           </div>
 
-          <img src="./girgiss.png" alt="gg" />
+          {/* <img src="./girgiss.png" alt="gg" /> */}
         </div>
       </div>
     </div>
